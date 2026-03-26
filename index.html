@@ -1,31 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nakshatra Inventions</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* --- STYLES FOR THE WEBSITE --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #121619; /* Dark tech background */
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        header {
+            text-align: center;
+            padding: 60px 20px 30px;
+        }
+        h1 {
+            color: #d19f75; /* Copper tone from logo */
+            font-size: 3.5rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        .tagline {
+            color: #79aeb2; /* Teal tone from logo */
+            font-size: 1.2rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+        .container {
+            background-color: #1e2429;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+            width: 90%;
+            max-width: 500px;
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #79aeb2;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #333;
+            border-radius: 6px;
+            background-color: #121619;
+            color: #fff;
+            font-size: 1rem;
+        }
+        input:focus, select:focus {
+            outline: none;
+            border-color: #d19f75;
+        }
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #d19f75;
+            color: #121619;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #b5865f;
+        }
+        /* --- FUTURE CONTENT SECTION --- */
+        .future-content {
+            margin-top: 50px;
+            padding: 20px;
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <h1>Welcome to Nakshatra Inventions</h1>
+        <h1>NAKSHATRA INVENTIONS</h1>
+        <p class="tagline">Here Calliber Matters</p>
     </header>
-    <main>
-        <section>
-            <h2>About Us</h2>
-            <p>Nakshatra Inventions is dedicated to fostering innovation and creativity.</p>
-        </section>
-        <section>
-            <h2>Our Projects</h2>
-            <ul>
-                <li>Project A</li>
-                <li>Project B</li>
-                <li>Project C</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Nakshatra Inventions. All rights reserved.</p>
-    </footer>
+
+    <div class="container">
+        <form action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST">
+            
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Gmail Address</label>
+                <input type="email" id="email" name="email" required placeholder="your.email@gmail.com">
+            </div>
+
+            <div class="form-group">
+                <label for="whatsapp">WhatsApp Phone Number</label>
+                <input type="tel" id="whatsapp" name="whatsapp" required placeholder=" +91 XXXXX XXXXX">
+            </div>
+
+            <div class="form-group">
+                <label for="qualification">Qualification</label>
+                <input type="text" id="qualification" name="qualification" required placeholder="e.g., Class 12, B.Tech, etc.">
+            </div>
+
+            <button type="submit">Submit Details</button>
+        </form>
+    </div>
+
+    <div class="future-content">
+    </div>
 </body>
 </html>
